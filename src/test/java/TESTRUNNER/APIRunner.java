@@ -35,14 +35,18 @@ public class APIRunner extends BaseClass{
 		XlsxExcel.currentTestcase = TestCaseID;
 		XlsxExcel.sheetName = "Sheet1"; 
 		
-		String baseurl="https://reqres.in/api/users";
-		
+
+			
 		ExtentTestManager.createTest(TestCaseID);
 		DemoAPI policy=new DemoAPI();
 		String request=policy.setPlaceHolder(XlsxExcel.sheetName);
 
-		Response response =APIRequest_Response.Request(request, baseurl);
+		Response response =APIRequest_Response.POSTRequest(request, APIUrl.Posturl);
 		System.out.println(response.prettyPrint());
+		
+		Response response1 =APIRequest_Response.GETRequest(APIUrl.Geturl);
+		System.out.println(response.prettyPrint());
+		System.out.println(response1.prettyPrint());
 		}
 		
 		
