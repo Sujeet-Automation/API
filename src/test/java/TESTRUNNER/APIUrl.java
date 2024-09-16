@@ -2,6 +2,6 @@ package TESTRUNNER;
 
 public class APIUrl {
 
-	public static String Geturl="https://dummy.restapiexample.com/api/v1/employees";
+	public static String Geturl="https://api.restful-api.dev/objects";
 	public static String Posturl="https://reqres.in/api/users";
 }
