@@ -1,4 +1,4 @@
-package TESTRUNNER;
+package Pages;
 
 public class APIUrl {
 
